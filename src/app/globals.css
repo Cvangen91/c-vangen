@@ -1,26 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: 225 236 255; /* lys blågrå bakgrunn */
+  --surface: 255 255 255; /* kort/panel */
+  --ink: 16 20 26; /* nesten svart */
+  --muted: 92 104 122; /* gråblå tekst */
+  --line: 15 23 42 / 0.08; /* subtile linjer */
+  --accent: 74 120 215; /* dus blå */
+  --accent2: 50 90 180; /* mørkere blå */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html,
+  body {
+    height: 100%;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  body {
+    background: rgb(var(--bg));
+    color: rgb(var(--ink));
+  }
 }
