@@ -23,7 +23,7 @@ export default function CurvedSection({
         />
       </svg>
 
-      <div className={`${bg} py-16`}>{children}</div>
+      <div className={`${bg} py-10 sm:py-14 lg:py-16`}>{children}</div>
 
       {/* bottom curve */}
       <svg
