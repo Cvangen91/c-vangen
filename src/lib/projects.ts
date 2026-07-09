@@ -20,7 +20,7 @@ export const projects: Project[] = [
       "Kurs plattform for Anne Myrvoll. Oversikt, adminpanel, integrasjon av paypal.",
     year: "2026",
     role: "Fullstack",
-    stack: ["React", "Next.js", "TypeScript"],
+    stack: ["React", "Next.js", "Javascript"],
     highlights: [
       "Kursplattform med oversikt over kurs og kursdeltakere",
       "Fullverdig adminpanel",
